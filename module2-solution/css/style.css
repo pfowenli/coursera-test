@@ -1,0 +1,68 @@
+/********** Base styles **********/
+*{
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  /**margin-bottom: 30px;**/
+  font-size: 1.75em;
+}
+#d1, #d2, #d3 {
+  float: left;
+  background-color: gray;
+  border: 1px solid black;
+  width: 90%;
+  padding: 5px;
+  margin: 5px 5px 10px 5px;
+  font-size: 1em;
+}
+#p-title-1, #p-title-2, #p-title-3 {
+  float: right;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  text-align: center;
+  border: 1px solid black;
+  width: 100px;
+  padding: 5px;
+  margin: 0;
+  font-size: 1.25em;
+}
+#p-title-1{
+    background-color: red;
+}
+#p-title-2{
+    background-color: green;
+}
+#p-title-3{
+    background-color: yellow;
+}
+p.content {
+  clear: right;
+  margin: 0;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #d1 {
+    width: 30%;
+  }
+  #d2 {
+    width: 30%;
+  }
+  #d3 {
+    width: 30%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #d1 {
+    width: 45%;
+  }
+  #d2 {
+    width: 45%;
+  }
+  #d3 {
+    width: 91%;
+  }
+}
